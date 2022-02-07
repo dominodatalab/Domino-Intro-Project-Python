@@ -16,10 +16,12 @@ Table of Contents:
 * data.csv
 * app.sh
 
-To run the model API, be sure to set up an environment with the following code in the Dockerfile:
+Be sure to set up an environment with the following code in the Dockerfile before starting the activities:
 
 ```
 RUN pip install "pystan==2.17.1.0" "plotly<4.0.0" requests dash && pip install fbprophet==0.6
 RUN pip install --upgrade nbclient nbconvert
 RUN pip install papermill
 ```
+
+To run the model API, generate the model.pkl file by running the Forecast_Power_Generation.ipynb notebook in a Domino workspace. 
